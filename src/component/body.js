@@ -45,23 +45,11 @@ class Body extends react.Component{
                       )
                     })}
                   </div>
-                  <div className="revenue col-lg-12 bg-info">
-                    <img className="chart" src="https://raw.githubusercontent.com/farizian/week14/master/img/Chart.png" alt="">
+                  <div className="revenue col-lg-12">
+                    <img className="chart" src="./photo/Chart.png" alt="">
                     </img>
                   </div>
                   <div className="recent col-lg-12">
-                    <div className="row">
-                      <div className="pic col-lg-6">
-                        <p>Recent Order</p>
-                      </div>
-                      <div className="pic col-lg-6">
-                        <div className="dropdown">
-                          <p>Today</p>
-                          <img src="" alt="" onClick="">
-                          </img>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>}
             </div>
@@ -70,13 +58,12 @@ class Body extends react.Component{
                 <div className="cartid">
                   <div className="cartqty" id="cartitem">
                     <div className="empty" id="del">
-                      <img className="cup" src="https://raw.githubusercontent.com/farizian/week10/master/tugas1/img/cupblank.png" alt="" srcset=""/>
+                      <img className="cup" src="./photo/food-and-restaurant.png" alt="" srcset=""/>
                       <h3>Your cart is empty</h3>
                       <p>Please add some items from the menu</p>
                     </div>
                   </div>
                 </div>
-                <div className="ttl" id="tot"></div>
             </div>:null}
           </div>
         </div>

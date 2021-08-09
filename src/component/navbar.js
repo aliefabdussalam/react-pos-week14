@@ -1,5 +1,4 @@
 import React from 'react'
-// import {Link} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../css/navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,7 +33,6 @@ class Navbar extends React.Component{
           this.props.cart===true?(
           <div className="container-fluid navi col-lg-4">
             <a className="navbar-brand cartitle" href="#">Cart</a>
-            <div id="numcard" className="cartnum rounded-circle"></div>
           </div>
           ):null
         }
