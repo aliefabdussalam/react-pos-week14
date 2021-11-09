@@ -6,7 +6,7 @@ class Home extends react.Component{
   constructor(props){
     super(props)
     this.state = {
-      product: [
+      products: [
         {
             product_name: 'espresso',
             id :1,
@@ -85,10 +85,91 @@ class Home extends react.Component{
     }
   }
   render(){
+    const {products, cart} = this.state
+        // update data cart
+        const updatecart = ()=>{
+            this.setState({
+                cart : cart
+            })
+        }
+        // update data product
+        const updateproduct = () =>{
+            this.setState({
+                products : products
+            })
+        }
+
+        // check data array cart
+        const checkdata  = (data) =>{
+            // eslint-disable-next-line array-callback-return
+            const find = cart.find((e) => {
+                if (e.id === data){
+                    return e
+                }
+            })
+            return find
+        }
+
+        // menambahkan quantity product dengan button plus
+        const addqty = (data) =>{
+            const find = cart.findIndex((e=> e.id === data))
+            cart[find].qty +=1
+        }
+        const btnAdd = (data) =>{
+            addqty(data)
+            updatecart()
+        }
+
+        // mengurangi quantity product dengan button plus
+        const btnRemove = (data) =>{
+            const remove = cart.findIndex((e=> e.id === data))
+            cart[remove].qty <= 1 ? (
+                cart.splice([remove],1)
+            ): (cart[remove].qty -=1 )
+            updatecart()
+        }
+
+        // menghapus data di array cart berdasarkan id
+        const remove = (data) =>{
+            const newcart = checkdata(data)
+            cart.splice([newcart],1)
+            updatecart()
+        }
+        // menghapus semua data di array cart
+        const removeAll = () =>{
+            this.setState({cart: []});
+        }
+        // menambahkan data baru ke array product
+        const onAddProduct = (result) =>{
+            products.push(result)
+            updateproduct()
+        }
+         // menambahkan data baru ke array cart
+        const onAdd = (data) =>{
+            // eslint-disable-next-line array-callback-return
+            const find = products.find((e) => {
+                if(e.id === data){
+                    return e
+                }
+                console.log(e)
+            })
+            const check = checkdata(data)
+            // console.log (check)
+            if (check === undefined){
+                const qty = {
+                    ...find, qty : 1
+                }
+                cart.push(qty)
+            }else {
+                addqty(data)
+            }
+            updatecart()
+        }
+        const length = cart.length
     return(
       <div>
         <Navbar col={true} cart={true} search={true}/>
-        <Body home={true} product={this.state.product}/>
+        <Body home={true} product={this.state.products} data = {cart} qtyAdd={btnAdd} qtyRemove={btnRemove} onRemove={remove} removeAll= {removeAll} action={onAdd}/>
       </div>
     )
   }

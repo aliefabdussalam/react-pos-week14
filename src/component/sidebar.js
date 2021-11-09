@@ -1,6 +1,7 @@
 import react from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../css/body.css"
+import { Link } from 'react-router-dom'
 
 
 class Side extends react.Component{
@@ -13,8 +14,8 @@ class Side extends react.Component{
   render(){
     return(
       <div className="sidebar" id="sb">
-        <a href="/"><img className="fork" src="./photo/fork.png" alt="" srcset=""/></a>
-        <a href="/history"><img className="clip" src="./photo/clipboard.png" alt="" srcset=""/></a>
+        <Link to="/"><img className="fork" src="./photo/fork.png" alt="" srcset=""/></Link>
+        <Link to="/history"><img className="clip" src="./photo/clipboard.png" alt="" srcset=""/></Link>
         <img className="add" src="./photo/add.png" alt="" srcset=""/>
       </div>
     )

@@ -15,7 +15,7 @@ class Navbar extends React.Component{
           </button>
           {
             this.props.col===true?(
-            <a className="navbar-brand logo" href="#">Food Items</a>
+            <a className="navbar-brand logo offset-lg-5" href="#">Food Items</a>
             ): <a className="navbar-brand logo2" href="#">History</a>
           }
             <input type="checkbox" id="check"/>
