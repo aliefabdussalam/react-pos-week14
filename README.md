@@ -2,7 +2,7 @@
 
 ## landing page
 ### tampilan utama 
-![desktop](https://drive.google.com/file/d/1qUhb_MNj0Wc1sQkN_cVUD_Ky4I10qvUm/view?usp=sharing)
+![desktop](https://drive.google.com/file/d/1qUhb_MNj0Wc1sQkN_cVUD_Ky4I10qvUm/view)
 ### tampilan disaat produk di klik
 ![desktop](https://drive.google.com/file/d/1REHhx0usfoGAkYThIOqC-u3A1mxmCwtz/view?usp=sharing)
 ### tampilan saat check out
