@@ -8,4 +8,4 @@
 ### tampilan saat check out
 ![desktop](https://drive.google.com/file/d/1-Yyfqp6wLdM8aY3pULfYHQRlUqMhrqr_/view?usp=sharing)
 ## history page
-![desktop](https://drive.google.com/file/d/1TMVaafIl65Sxvnu3gmLS5U1FV1QXn4PT/view?usp=sharing)
+![desktop](https://drive.google.com/file/d/1TMVaafIl65Sxvnu3gmLS5U1FV1QXn4PT/view)
