@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# POS APP 
+merupakan website berbasis reactjs yang digunakan untuk mempermudah cashier dalam menghitung invoice, website ini juga dilengkapi dengan booststrap untuk mengatur tampilan
+--
+untuk mencoba websitenya bisa dicoba di [sini](https://pos-app-react.vercel.app/)
 
 ## landing page
 ### tampilan utama 
